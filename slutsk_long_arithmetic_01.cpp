@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-//функция заполнение массива цифрами
+//функция для заполнения массива цифрами
 void stringToArray(int m[], string s){
     const int number_of_digits = 9;//число цифр в массиве
     int n =s.length();
