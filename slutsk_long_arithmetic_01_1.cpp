@@ -20,29 +20,13 @@ void stringToArray(int m[], string s){
         m[index] = m[index]*10+s[i]-'0';
     }
 }
-//находим произведение
-void multiply_numbers(int a[], int b[], int c[]){
-    int in_the_mind = 0;
-    for(int i=1; i<=b[0]; i++){
-       for(int j=1; j<a[0]; j++){
-          long long mult = (long long) a[j]*b[i];
-          c[i+j-1] = mult
-       }
-    }
-    return;
-}
 
 int main(){
     int a[100]={0};
-    int b[100]={0};
-    int c[200]={0};
     string s;
     cin >> s;
     stringToArray(a, s);
-    cin >> s;
-    stringToArray(b, s);
-    multiply_numbers(a, b, c);
-     for(int i=1; i <= a[0]; i++){
+    for(int i=1; i <= a[0]; i++){
         cout << a[i] <<" ";
     }
 
